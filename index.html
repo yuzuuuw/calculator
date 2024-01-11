@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>kalkulatorakw</title>
+</head>
+<body>
+    <div class="main">
+        <form class="formkalkulator" name="formkalkulator">
+            <div class="screen">
+                <input type="text" name="screen" readonly>
+            </div>
+
+            <div class="btn">
+                <input type="button" class="tombolReset" name="hapus"
+                value="Reset" onclick="Reset()">
+            </div>
+
+            <div class="btn">
+                <input type="button" class="angka" name="angka1" value="1"
+                onclick="valueButton(this);">
+                <input type="button" class="angka" name="angka2" value="2"
+                onclick="valueButton(this);">
+                <input type="button" class="angka" name="angka3" value="3"
+                onclick="valueButton(this);">
+                <input type="button" class="angka" name="tambah" value="+"
+                onclick="valueButton(this);">
+            </div>
+                <div class="btn">
+                    <input type="button" class="angka" name="angka4" value="4"
+                    onclick="valueButton(this);">
+                    <input type="button" class="angka" name="angka5" value="5"
+                    onclick="valueButton(this);">
+                    <input type="button" class="angka" name="angka6" value="6"
+                    onclick="valueButton(this);">
+                    <input type="button" class="angka" name="kurang" value="-"
+                    onclick="valueButton(this);">
+                </div>
+                <div class="btn">
+                    <input type="button" class="angka" name="angka7" value="7"
+                    onclick="valueButton(this);">
+                    <input type="button" class="angka" name="angka8" value="8"
+                    onclick="valueButton(this);">
+                    <input type="button" class="angka" name="angka9" value="9"
+                    onclick="valueButton(this);">
+                    <input type="button" class="angka" name="kali" value="*"
+                    onclick="valueButton(this);">
+                </div>
+                <div class="btn">
+                    <input type="button" class="angka" name="angka0" value="0"
+                    onclick="valueButton(this);">
+                    <input type="button" class="angka" name="bagi" value="/"
+                    onclick="valueButton(this);">
+                    <input type="button" class="angka" name="sama dengan" 
+                    value="=" onclick="Hitung();">
+                </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
